@@ -1,0 +1,237 @@
+/* Обращение к тегу */
+body
+{
+    background-color: rgb(32, 32, 32);
+    color: azure;
+    
+    font-size: 20px;
+    font-weight: normal;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*  */
+    margin: 0px;
+    background: url(waterfall.gif) fixed ;
+    background-size: cover; /* растягивает картинку на весь экран */
+    backdrop-filter: brightness(30%) ;
+}  
+a {
+    color: blue;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:visited{
+    color: blueviolet;
+}
+
+h2{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+ul{
+    margin-top: 0px;
+}
+
+ol{
+    margin-top: 0px;
+}
+/* .marginTop{
+    margin-top: 0px;
+} */
+/* обращение к классу */
+.headers{
+    background-color: red;
+    padding-left: 15px;
+    
+}
+/* обращение к id элемента */
+#bobrImage{
+    width: 500px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 14px rgb(158, 158, 32);
+}
+.top p {
+    /* color: blue; */
+    margin-top: 8px;
+    margin-bottom: 0px;  
+}
+.card{
+    background-color: blueviolet;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+
+.card h2{
+    margin-top: 0px;
+    margin-bottom: 0px;  
+}
+
+.bg-red{
+    background-color: #7c1919;
+}
+.bg-purple{
+    background-color: rgb(109, 17, 109);
+}
+
+.menu {
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+.layout{
+    display: flex;
+    max-width: 1200px;
+    margin:auto;
+    width: 100%;
+}
+
+.container{
+    max-width: 1000px;
+    /* margin:auto; */
+    margin-top: 40px;
+}
+
+/* nth-child() это псевдо селектор */
+.table td:nth-child(2){
+    color: pink;
+}
+.table tr:nth-child(even){
+   background: rgb(218, 127, 8);
+}
+.first-list{
+    list-style: square;
+}
+
+.form-group label {
+    display: block;
+}
+.form-group input, .form-group textarea {
+    /* width: 100%; */
+    color: azure;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid rgb(135, 216, 135);
+    padding: 10px;
+    outline: none;
+    font-size: 20px;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    resize: none;
+    /* margin-right: 100px; */
+}
+
+#textFieldName{
+    width: 100%;
+}
+.span{
+    width: 100%;
+    white-space: nowrap; 
+    /* normal */
+}
+.emailList{
+    color: azure;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid rgb(135, 216, 135);
+    padding: 9.4px;
+    outline: none;
+    font-size: 20px;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    resize: none;
+    cursor: pointer;
+}
+option{
+    color: azure;
+    background-color: rgb(32, 32, 32);
+    
+}
+#text{
+    width: 98.5%;
+    margin: 0px;
+    padding-right: 0px;
+}
+.row {
+    display: flex;
+    margin-bottom: 10px;
+}
+.row >.form-group{
+    width: 50%;
+}
+.row >.form-group:first-child {
+    margin-right: 40px;
+}
+.row >.form-group:last-child {
+    margin-right: 0px;
+}
+
+.top{
+    display: flex;
+}
+@media (max-width: 1100px){
+    
+    .top{
+        display: block;
+    }
+    .topText{
+        margin-left: 0px;
+    }
+    
+}
+
+.topText{
+    margin-left: 35px;
+}
+
+.origin p{
+    margin-top: 8px;
+    margin-bottom: 10px;  
+}
+.button{
+    background-color: rgb(144, 28, 160);
+    color: azure;
+
+    font-size: 20px;
+    font-weight: normal;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+.button:hover{
+    opacity: 0.85;
+}
+.button:active{
+    opacity: 0.75;
+}
+.menuList{
+    list-style: none;
+}
+.menuListLi{
+    /* width: 50px;
+    height: 20px; */
+    color: rgb(91, 99, 99);
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    width: 100%;
+}
+.menuListLi:hover{
+    /* opacity: 0.85; */
+    background-color: rgb(65, 65, 65);
+    text-decoration: none;
+}
+.menuListLi:visited{
+    color: rgb(91, 99, 99);
+}
+
+#text{
+    margin-right: 100px;
+    
+}
+.incorrectInput{
+    color: red;
+    margin: 0px;
+}
+/*Сделать так, чтобы включить в ширину объекта его границу box-sizing: border-box; */
+/* шрифт наследуется font-family: inherit;*/
